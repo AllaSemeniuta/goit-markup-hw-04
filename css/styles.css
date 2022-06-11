@@ -300,8 +300,6 @@ body {
   justify-content: center;
 }
 .team-item-soc {
-  width: 44px;
-  height: 44px;
   margin-right: 10px;
 }
 .team-item-soc:last-child {
@@ -311,8 +309,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
 }
 .team-link-soc:hover,
@@ -338,9 +336,13 @@ body {
   display: flex;
 }
 .clients-item {
-  width: 170px;
+  width: calc(100% / 6 - 30px);
   height: 92px;
   margin-right: var(--typical-gap);
+
+  /* width: 170px; */
+  /* height: 92px; */
+  /* margin-right: var(--typical-gap); */
 }
 
 .clients-item:last-child {
